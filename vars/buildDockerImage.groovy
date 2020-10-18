@@ -1,5 +1,3 @@
-import static cicd.VersionManager.getNextVersion
-
 def call(Map params) {
 
   println("Building Docker image");
