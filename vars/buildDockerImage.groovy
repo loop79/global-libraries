@@ -7,6 +7,7 @@ def call(Map params) {
 
 //log.info(message: "Uploading to openshift")
   sh '''  
+ls -l  
 oc new-build --strategy docker --binary --name myapp2 --to="myapp2"
 oc start-build myapp2 --from-dir . --follow
 oc new-app myapp2
